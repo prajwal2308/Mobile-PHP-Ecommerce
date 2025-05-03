@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function logina(event)
+        {
+            event.preventDefault(); // Prevent form submission
+            var x=document.getElementById('usn').value;
+            var y=document.getElementById('passwd').value;
+            if(x=='praju' && y=='2308') 
+            {
+                window.location.href = "index.php";
+                return true;
+            } else {
+                alert('Invalid login');
+                return false;
+            }
+        }          
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For google icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> loginform</title>
+    <style>
+        
+        body {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ::placeholder
+        {
+            color:white;
+            font-size: 10pt;
+        }
+        
+        .background {
+            background: url('oneplusmc.jpg') rgba(245, 235, 235, 0.61);
+            background-repeat: no-repeat;
+            background-size: cover;
+         
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            filter: blur(3px);
+            min-height: 800px;
+
+        }
+        
+        h2 {
+            font-size: 20px;
+            padding-right: 300px;
+            margin-top: 25px;
+           
+            
+        }
+        .container {
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgba(49, 19, 19, 0.61);
+            box-shadow: 0 0 15px rgb(199, 183, 93);
+            border-radius: 15px;
+            width: 500px;
+            margin: 10vh auto;
+        }
+        
+     
+        
+        form {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .form-item {
+            display: flex;
+            width: 90%;
+            background: rgba(255, 243, 242, 0.344);
+            margin: 10px auto;
+            align-items: center;
+            border-radius: 15px;
+            border-bottom: 1px solid rgb(182, 182, 44);
+        }
+        .form-item:hover {
+            border: 1px solid rgb(245, 242, 242);;
+        }
+        input {
+            font-size: 18px;
+            width: 80%;
+            height: 30px;
+            outline: none;
+            background: transparent;
+            border: none;
+            margin: auto;
+            color: white;
+        }
+       
+        span {
+            margin: 5px;
+            color: rgb(247, 233, 233);
+            cursor: default;
+            user-select: none;
+            background: rgba(173, 43, 43, 0.637);
+            padding: 5px;
+            border-radius: 15px;
+        }
+      
+        
+        button[type="submit"] {
+            width: 170px;
+            font-size: 15px;
+            margin: 4px auto;
+            padding: 6px 4px;
+            color: white;
+            background: rgba(241, 183, 116, 0.72);
+            border-radius: 12px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-align: center;
+            border-style:groove;
+            
+        }
+        button[type="submit"]:hover {
+            background: rgb(204, 133, 52);
+        }
+        p:first-of-type {
+            font-size: 15px;
+            color: rgb(228, 93, 59);
+            margin: 0;
+        }
+        
+        .options {
+            display: flex;
+            margin:  10px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        button {
+            padding: 5px 16px;
+            font-size: 18px;
+            margin: 5px 15px;
+            width: 180px;
+            color: white;
+            background: rgba(52, 124, 207, 0.486);
+            cursor: pointer;
+            transition: all 0.7s ease;
+        }
+            .fa {
+                padding: 5px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin: 4px 10px;
+                border-radius: 50%;
+              }
+              
+              .fa:hover {
+                  opacity: 0.7;
+              }
+              
+              .fa-facebook {
+                background: #3B5998;
+                color: white;
+              }
+              .fa-google {
+                background: #dd4b39;
+                color: white;
+              }
+
+        
+        
+        p {
+            font-size: 10px;
+            margin: 5px;
+        }
+        a{
+            color: rgb(139, 139, 216);
+            font-size: 10pt;
+        }
+        a:hover{
+            color: grey;
+        }
+
+        @media screen and (max-width:550px) {
+            .container {
+                width: 90%;
+            }
+           
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h2>LOG IN</h2>
+        <form onsubmit="return logina(event)">
+
+            <div class="form-item">
+                <span class="material-icons-outlined">
+                    account_circle
+                    </span>
+                <input type="text" name="text" id="usn" placeholder="username or email" required>
+            </div>
+
+            <div class="form-item">
+                <span class="material-icons-outlined">                   
+                    lock
+                    </span>
+                <input type="password" name="pass" id="passwd" placeholder="password" required>
+
+            </div>
+
+            <button type="submit">Log in</button>
+            <p>Or with</p>
+            <div class="options">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                
+               
+            </div>
+            <p>New User? <a href="signin2.html">Create an account</a></p>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

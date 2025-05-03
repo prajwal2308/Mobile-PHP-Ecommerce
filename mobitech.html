@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobitech - Mobile Store</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('blackbg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .category-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-info h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            position: relative;
+            padding-top: 100%;
+        }
+
+        .product-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 20px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #e65100;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #e65100;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #d84315;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            color: #e65100;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero {
+                height: 400px;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <?php include 'header.php'; ?>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Mobitech</h1>
+            <p>Discover the latest smartphones and accessories</p>
+        </div>
+    </div>
+
+    <section class="categories">
+        <h2 class="section-title">Browse Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="7t main.png" alt="Smartphones">
+                <div class="category-info">
+                    <h3>Smartphones</h3>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="btnc.png" alt="Accessories">
+                <div class="category-info">
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="camera.png" alt="Cameras">
+                <div class="category-info">
+                    <h3>Cameras</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="6t.jpg" alt="OnePlus 6T">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">OnePlus 6T</h3>
+                    <div class="product-price">$599.99</div>
+                    <a href="product-details.php?id=6t" class="add-to-cart-btn">View Details</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="7 pro.png" alt="OnePlus 7 Pro">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">OnePlus 7 Pro</h3>
+                    <div class="product-price">$699.99</div>
+                    <a href="product-details.php?id=7pro" class="add-to-cart-btn">View Details</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="8t.png" alt="OnePlus 8T">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">OnePlus 8T</h3>
+                    <div class="product-price">$749.99</div>
+                    <a href="product-details.php?id=8t" class="add-to-cart-btn">View Details</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="9t.png" alt="OnePlus 9T">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">OnePlus 9T</h3>
+                    <div class="product-price">$799.99</div>
+                    <a href="product-details.php?id=9t" class="add-to-cart-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="material-icons-outlined feature-icon">local_shipping</span>
+                <h3>Free Shipping</h3>
+                <p>On orders over $500</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons-outlined feature-icon">security</span>
+                <h3>Secure Payments</h3>
+                <p>100% secure checkout</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons-outlined feature-icon">support_agent</span>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support team</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons-outlined feature-icon">replay</span>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+        </div>
+    </section>
+
+    <?php include 'footer.php'; ?>
+</body>
+</html>

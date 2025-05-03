@@ -1,0 +1,26 @@
+<head>
+    
+    <script>
+        function pass()
+        {
+            var x=document.getElementById('usn').value;
+            var y=document.getElementById('pass').value;
+            if(x=='praju' && y=='2308') 
+            {
+                document.getElementById('msg').innerHTML="login sucess";
+                return true;
+                location.replace("https://www.w3schools.com")
+        }else{
+            alert('ivalid login');
+        }
+    }
+    </script>
+    
+</head>
+<body>
+    usn<input type="text" id="usn"><br>
+    pass<input type="password" id="pass"><br>
+    <p id="msg"></p>
+    <input type="submit" onclick="pass()"/>
+
+</body>

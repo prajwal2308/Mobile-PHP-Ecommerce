@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+                
+            function pass()
+        {
+            var x=document.getElementById('usn').value;
+            var y=document.getElementById('pass').value;
+            if(x=='praju' && y=='2308') 
+            {
+                location.href="mobitech.html";
+                location.replace="mobitech.html";
+                return true;
+                
+        }else{
+            alert('ivalid login');
+        }
+    }           
+            </script>
+    </head>
+    
+<body>
+    usn<input type="text" id="usn"><br>
+    pass<input type="password" id="pass"><br>
+    <p id="msg"></p>
+
+<button onclick="pass()">Replace document</button>
+
+
+</body>
+</html> 

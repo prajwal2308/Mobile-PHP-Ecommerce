@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <title>DISPLAY</title>
+</head>
+<style>
+    body,
+    #h1 {}
+    
+    #smg {
+        margin-left: 50px;
+        float: left;
+        position: fixed;
+    }
+    
+    #desc {
+        float: right;
+        text-align: center;
+        position: relative;
+        margin-right: 10%;
+        font-size: 18pt;
+        border-bottom: 30px;
+    }
+    
+    #info {
+        float: right;
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+        margin-right: -355px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    tr,
+    td {
+        padding: 9px;
+        text-align: center;
+    }
+    
+    #add {
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: pink;
+        float: right;
+        margin-top: 260px;
+        margin-right: -220px;
+        
+    }
+    
+    #buy {
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: pink;
+        float: right;
+        margin-top: 260px;
+        margin-right: -390px;
+    }
+</style>
+
+<body>
+    <center>
+        <img src="Mobitech.png" id="mbt" width="100px" height="70px" />
+    </center>
+    <div class="h1">
+        <center> <span style="font-size: 20pt;color:rgb(224, 78, 41);">M</span>OBITECH</center><br><br>
+    </div>
+    <div id="desc">
+        <p>Samsung Galaxy S21 5G (ROSE PINK, 8GB, 128GB Storage)<br> with No Cost EMI/Additional Exchange Offers
+    </div>
+    <div id="info">
+        <table>
+            <tr>
+                <td>M.R.P: </td>
+                <td><del>RS.77,999</td></td></tr>
+                                    <tr><td>Deal Price</td><td>RS.72,999</td></tr>
+                                    <tr><td>You save</td><td>RS.5,000</td></tr>
+                        </table>
+                    
+                    </div>
+                    <div>
+                        <img id="smg" src="smg1.png"><br>
+                    </div>
+                
+                
+                
+                <form method="post" action="add.php">
+                
+                    <input type="hidden" id="name" name="dvn" value="SAMGUNG S21 5G">
+                    <input type="hidden" id="price" name="dvp" value="RS.72,000">
+                    <input type="submit"  id="add" value="ADD TO CART" />
+                    <input type="button"  id="buy" value="PROCEED TO BUY"/>
+                </form>
+    
+</body>

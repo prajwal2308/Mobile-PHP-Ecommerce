@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function validatePassword() {
+            var pass = document.getElementById("pass");
+            var cpass = document.getElementById("cpass");
+            
+            if (pass.value != cpass.value) {
+                cpass.setCustomValidity("Passwords Don't Match");
+                return false;
+            } else {
+                cpass.setCustomValidity('');
+                return true;
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For google icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign up</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+         ::placeholder {
+            color: white;
+            font-size: medium;
+        }
+        
+        .background {
+            background: url('oneplusmc2.jpg') rgba(245, 235, 235, 0.61);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            filter: blur(3px);
+            min-height: 800px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            padding-right: 300px;
+            margin-top: 25px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgba(49, 19, 19, 0.61);
+            box-shadow: 0 0 15px rgb(199, 183, 93);
+            border-radius: 15px;
+            width: 500px;
+            margin: 10vh auto;
+        }
+        
+        form {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-item {
+            display: flex;
+            width: 90%;
+            background: rgba(255, 243, 242, 0.344);
+            margin: 10px auto;
+            align-items: center;
+            border-radius: 15px;
+            border-bottom: 1px solid rgb(182, 182, 44);
+        }
+        
+        input {
+            font-size: 18px;
+            width: 80%;
+            height: 30px;
+            outline: none;
+            background: transparent;
+            border: none;
+            margin: auto;
+            color: white;
+        }
+        
+        span {
+            margin: 5px;
+            color: rgb(247, 233, 233);
+            cursor: default;
+            user-select: none;
+            background: rgba(173, 43, 43, 0.637);
+            padding: 5px;
+            border-radius: 15px;
+        }
+        
+        button[type="submit"] {
+            width: 170px;
+            font-size: 15px;
+            margin: 4px auto;
+            padding: 6px 4px;
+            color: white;
+            background: rgba(241, 183, 116, 0.72);
+            border-radius: 12px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-align: center;
+            border-style: groove;
+        }
+        
+        button[type="submit"]:hover {
+            background: rgb(204, 133, 52);
+        }
+        
+        p:first-of-type {
+            font-size: 15px;
+            color: rgb(228, 93, 59);
+            margin: 0;
+        }
+        
+        .options {
+            display: flex;
+            margin: 10px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        button {
+            padding: 5px 16px;
+            font-size: 18px;
+            margin: 5px 15px;
+            width: 180px;
+            color: white;
+            background: rgba(52, 124, 207, 0.486);
+            cursor: pointer;
+            transition: all 0.7s ease;
+        }
+        
+        .fa {
+            padding: 5px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 4px 10px;
+            border-radius: 50%;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+        
+        p {
+            font-size: 10px;
+            margin: 5px;
+        }
+        
+        a {
+            color: rgb(59, 59, 212);
+            font-size: 10pt;
+        }
+        
+        a:hover {
+            color: grey;
+        }
+        
+        @media screen and (max-width:550px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h2>SIGN UP</h2>
+        <form action="signin.php" method="post" onsubmit="return validatePassword()">
+            <div class="form-item">
+                <span class="material-icons-outlined">
+                    account_circle
+                    </span>
+                <input type="text" name="usn" id="usn" placeholder="username" required>
+            </div>
+            <div class="form-item">
+                <span class="material-icons-outlined">
+                    account_circle
+                    </span>
+                <input type="email" name="email" id="email" placeholder=" abc@example.com" required>
+            </div>
+
+            <div class="form-item">
+                <span class="material-icons-outlined">                   
+                    lock
+                    </span>
+                <input type="password" name="pass" id="pass" placeholder="Password8" required>
+
+            </div>
+            <div class="form-item">
+                <span class="material-icons-outlined">                   
+                    lock
+                    </span>
+                <input type="password" name="cpass" id="cpass" placeholder="confirm-password" required>
+            </div>
+
+            <button type="submit">Sign up</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

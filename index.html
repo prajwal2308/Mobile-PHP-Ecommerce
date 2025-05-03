@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function fadeIn(element) {
+            var op = 0.1; // initial opacity
+            var timer = setInterval(function() {
+                if (op >= 1) {
+                    clearInterval(timer);
+                }
+                element.style.opacity = op;
+                op += 0.1;
+            }, 40);
+        }
+
+        function changeImage() {
+            var img = document.getElementById("op6t");
+            img.src = "btng2.png ";
+            fadeIn(img);
+
+            return false;
+        }
+
+        function chrome() {
+            var img = document.getElementById("op6t");
+            fadeIn(img);
+            img.src = "btngch1.png";
+
+
+            return false;
+        }
+
+        function phone() {
+            var img = document.getElementById("op6t");
+            img.src = "btnp.png ";
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            return false;
+        }
+
+        function back() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "6ttt.png";
+        }
+
+        function f6t() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "6tf.png";
+        }
+
+        function b6t() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "6tb.png";
+        }
+
+        function f7t() {
+            var img = document.getElementById("op7t");
+            img.src = "7t main.png";
+        }
+
+        function b7t() {
+            var img = document.getElementById("op7t");
+            img.src = "7t back.png";
+        }
+
+        function m() {
+            var img = document.getElementById("op7t");
+            img.src = "7t.png";
+        }
+
+        function draw() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "2.jpg";
+        }
+
+        function google() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "ggl.jpg";
+        }
+
+        function playstr() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "ply.jpg";
+        }
+
+        function menu() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "menu.jpg";
+        }
+
+        function stng() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "stng 2.jpg";
+        }
+
+        function abt() {
+            var img = document.getElementById("op6t");
+            img.style.animation = "fadeIn 0.5s";
+            fadeIn(img);
+            img.src = "ab.jpg";
+        }
+
+        function hsmg() {
+            var img = document.getElementById("smg s21");
+            img.src = "smg3.png";
+        }
+
+        function msmg() {
+            var img = document.getElementById("smg s21");
+            img.src = "smg1.png";
+        }
+
+        function bsmg() {
+            var img = document.getElementById("smg s21");
+            img.src = "smg2.png";
+        }
+
+        function mip13() {
+            var img = document.getElementById("ip13h");
+            img.src = "ip13.png";
+        }
+
+        function bip13() {
+            var img = document.getElementById("ip13h");
+            img.src = "ip13b.png";
+        }
+
+        function fip13() {
+            var img = document.getElementById("ip13h");
+            img.src = "ip132.png";
+        }
+
+        function smg() {
+            location.replace("display.html")
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #op6t {
+            animation: fadeIn 0.5s;
+        }
+        
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        ul {
+            position: relative;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .h1 {
+            color: black;
+            padding: 10px;
+            margin: 0;
+        }
+        
+        li a:hover {
+            background-color: rgb(212, 88, 16);
+        }
+        
+        .first-ul li a {
+            background-size: cover;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 5px auto;
+        }
+        
+        .snd-ul li a {
+            background-size: cover;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 30px;
+            overflow: hidden;
+            text-decoration: none;
+            margin: auto;
+        }
+        
+        .snd-ul {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            resize: both;
+            overflow: auto;
+        }
+        
+        @media screen and (max-width:550px) {
+            .hidden1 {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width:650px) {
+            .hidden2 {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width:350px) {
+            .hidden0 {
+                display: none;
+            }
+        }
+        
+        .btnch {
+            position: absolute;
+            bottom: -53%;
+            border-radius: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .btnd {
+            position: absolute;
+            bottom: -47%;
+            border-radius: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .btnm {
+            position: absolute;
+            bottom: -53%;
+            border-radius: 80%;
+            left: 46%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .btnc {
+            position: absolute;
+            bottom: -53%;
+            border-radius: 80%;
+            left: 54%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        #btng {
+            position: absolute;
+            bottom: -53%;
+            border-radius: 80%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .btply {
+            position: absolute;
+            bottom: -37%;
+            border-radius: 80%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .btnp {
+            position: absolute;
+            bottom: -53%;
+            border-radius: 80%;
+            left: 41.5%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .back {
+            position: absolute;
+            bottom: -57%;
+            border-radius: 80%;
+            left: 46%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .ggl {
+            position: absolute;
+            bottom: -36%;
+            border-radius: 80%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .menu {
+            position: absolute;
+            top: 65%;
+            border-radius: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .stng {
+            position: absolute;
+            bottom: -25%;
+            border-radius: 80%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        .abt {
+            position: absolute;
+            bottom: -38%;
+            border-radius: 80%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            font-size: 15pt;
+            cursor: pointer;
+            color: transparent;
+            background-color: transparent;
+        }
+        
+        #fd {
+            background: transparent;
+            cursor: pointer;
+            padding: 10px;
+            border-style: none;
+        }
+        
+        #footer {
+            position: relative;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/
+            height: 150px;
+            background: rgb(49, 47, 47);
+        }
+        
+        #efoot {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            background-color: aliceblue;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        #update {
+            color: azure;
+            position: relative;
+            background-color: rgb(49, 47, 47);
+            width: 100%;
+            padding: 20px 10px 20px 10px;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        #buy {
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        #amazon {
+            height: 40px;
+            width: 60px;
+        }
+        
+        .amazon {
+            color: white;
+            margin: auto;
+            text-align: center;
+            padding: 10px 5px;
+            margin: 20px;
+        }
+        
+        h4 {
+            color: white
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <img src="Mobitech.png" id="mbt" width="100px" height="70px" />
+    </center>
+    <ul class='first-ul'>
+
+        <li id="header">
+            <div class="h1">
+
+                <span style="font-size: 20pt;color:rgb(224, 78, 41);">M</span>OBITECH
+            </div>
+        </li>
+
+        <li><a class="active" href="#mbt">Home</a></li>
+        <li><a href="#update">Update</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><a href="#footer">About</a></li>
+
+    </ul>
+    <br>
+    <div id="border">
+        <ul class="snd-ul">
+            <li>
+                <a href="#6t-page"><img src="6t.jpg" weight="90px" height="110px" <caption><br>oneplus 6t</caption>
+                </a>
+            </li>
+            <li>
+                <a href="#7t-page"><img src="7t.png" weight="90px" height="110px" <caption><br>oneplus 7t</caption>
+                </a>
+            </li>
+            <li class="hidden0">
+                <a href="#smgs21-page"><img src="smg1.png" weight="100px" height="120px">
+                    <caption><br>Samsung S21</caption>
+                </a>
+            </li>
+            <li class="hidden0">
+                <a href="#ip13"><img src="ip13.png" weight="100px" height="120px">
+                    <caption><br>Iphone 13</caption>
+                </a>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <div class="6t-main" id="6t-page">
+
+            <center> <img id="op6t" src="6ttt.png" width="300px" height="600px" />
+                <div class="subimages">
+                    <button id="fd"><img src="6tf.png" onclick="f6t()"  width="30px" height="60px"/></button>
+                    <button id="fd"><img src="6tb.png"  onclick="b6t()" width="30px" height="60px"/></button>
+                    <button id="fd"><img src="6ttt.png" onclick="back()"  width="30px" height="60px"/></button>
+                    <h4>ONEPLUS 6T</h4>
+            </center>
+            </div>
+        </div>
+        <div class="amazon"> BUY FROM
+            <center>
+                <a href="https://www.amazon.in/OnePlus-Midnight-Black-128GB-Storage/dp/B07DJHY82F"><img id="amazon" src="amazon.png"></a>
+                <a href="https://www.flipkart.com/oneplus-6t-mirror-black-128-gb/p/itm481488ed3d219"><img id="amazon" src="flipcart.png"></a>
+            </center>
+        </div>
+
+        <br><br>
+        <hr>
+        <hr><br><br>
+        <div class="7t-main" id="7t-page">
+            <center><img id="op7t" src="7t.png" width="600px" height="600px" />
+                <div class="subimages">
+                    <button id="fd"><img src="7t main.png" onclick="f7t()"  width="50px" height="50px"/></button>
+                    <button id="fd"><img src="7t back.png"  onclick="b7t()" width="50px" height="50px"/></button>
+                    <button id="fd"><img src="7t.png" onclick="m()"  width="50px" height="50px"/></button>
+                    <h4>ONEPLUS 7T</h4>
+            </center>
+            </div>
+        </div> <br><br>
+        <hr>
+        <hr><br><br>
+        <div class="smgs21" id="smgs21-page">
+            <center><img id="smg s21" src="smg1.png" width="650px" height="650px" />
+                <div class="subimages">
+                    <button id="fd"><img src="smg1.png" onclick="msmg()"  width="120px" height="120px"/></button>
+                    <button id="fd"><img src="smg2.png"  onclick="bsmg()" width="120px" height="100px"/></button>
+                    <button id="fd"><img src="smg3.png"  onclick="hsmg()"  width="120px" height="100px"/></button>
+                    <h4>SAMSUNG S21</h4>
+            </center>
+            </div>
+        </div><br><br>
+        <hr>
+        <hr><br><br>
+        <div class="ip13" id="ip13">
+            <center><img id="iph13" src="ip13.png" width="550px" height="550px" />
+                <div class="subimages">
+                    <button id="fd"><img src="ip13.png" onclick="mip13()"  width="100px" height="100px"/></button>
+                    <button id="fd"><img src="ip13b.png"  onclick="bip13()"  width="48px" height="90px"/></button>
+                    <button id="fd"><img src="ip132.png"  onclick="fip13()" width="100px" height="100px"/></button>
+                    <h4>IPHONE 13</h4>
+            </center>
+            </div>
+        </div>
+        <button class="btnch" onclick="chrome();">ch</button>
+        <button class="back" onclick="back();">b</button>
+        <button class="btnm">m</button>
+        <button class="btnp" onclick="phone();">p</button>
+        <button class="btnc">c</button>
+        <button class="btnd" onclick="draw()">d</button>
+        <button id="btng" onclick="changeImage();">g</button>
+        <button class="ggl" onclick="google();">ggl</button>
+        <button class="btply" onclick="playstr();">ply</button>
+        <button class="menu" onclick="menu();">mwnuuuuuuuuuuuuuuuuuuu</button>
+        <button class="stng" onclick="stng();">st</button>
+        <button class="abt" onclick="abt();">attttttttt</button>
+
+        <section id="top-sale">
+            <div class="container py-5">
+                <h4 class="font-rubik font-size-20"> Sale</h4>
+                <hr>
+                <!-- owl carousel -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/s21.png" alt="product1" width="50px" height="230px"></a>
+                            <div class="text-center">
+                                <h6>Samsung S21</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.72,000</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12" onclick="smg()">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/reno.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>OPPO RENO6 PRO</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.38,000</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/x60.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>VIVO X60 PRO</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.49,999</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/1p9r.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>ONEPLUS 9R</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.38,999</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/gp6.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>GOOGLE PIXEL 6</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.65,950/span>
+                      </div>
+                      <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item py-2">
+                  <div class="product font-rale">
+                    <div class="d-flex flex-column">
+                      <a href="#"><img src="assets/products/ip12.png" class="img-fluid" alt="pro1"></a>
+                      <div class="text-center">
+                        <h6>IPHONE 12</h6>
+                        <div class="rating text-warning font-size-12">
+                          <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.63,950</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item py-2">
+                    <div class="product font-rale">
+                        <div class="d-flex flex-column">
+                            <a href="#"><img src="assets/products/iq007.png" class="img-fluid" alt="pro1"></a>
+                            <div class="text-center">
+                                <h6>IQ007</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.29,999</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- !owl carousel -->
+    </div>
+    </section>
+    <!-- !Top Sale -->
+
+    <!-- Special Price -->
+    <section id="special-price">
+        <div class="container">
+            <h4 class="font-rubik font-size-20">Special Price</h4>
+            <div id="filters" class="button-group text-right font-baloo font-size-16">
+                <button class="btn is-checked" data-filter="*">All Brand</button>
+                <button class="btn" data-filter=".Apple">Apple</button>
+                <button class="btn" data-filter=".Samsung">Samsung</button>
+                <button class="btn" data-filter=".Redmi">Redmi</button>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item Apple border">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/13.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Apple iPhone 10</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.39,999</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Samsung border">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/sfold.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Samsung ZFLIP3</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.84,558</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Redmi border">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/11xpro.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Redmi 11X PRO</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.39,999</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Apple border">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/ip12.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Apple iPhone 10</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.41,999</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Samsung border">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <a href="#"><img src="assets/products/sfold3.png" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Samsung SFOLD3</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>RS.1,43,000</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item  Redmi border ">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                                <a href="#"><img src="assets/products/mi10i.png" class="img-fluid" alt="pro1"></a>
+                                <div class="text-center">
+                                    <h6>MI 10I</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>RS.23,999</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item  Redmi border ">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                                <center>
+                                    <a href="#"><img src="assets/products/x70.png" width="100px" height="194px" alt="pro1"></a>
+                                </center>
+                                <div class="text-center">
+                                    <h6>VIVO X70</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>RS.46,990</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item  Redmi border ">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                                <center>
+                                    <a href="#"><img src="assets/products/vivov21.jpg" width="90px" height="200px" alt="pro1"></a>
+                                </center>
+                                <div class="text-center">
+                                    <h6>vivo v21</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>RS.32,000</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item  Redmi border">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                                <center>
+                                    <a href="#"><img src="assets/products/a52s.png" width="250px" height="200px" alt="pro1"></a>
+                                </center>
+                                <div class="text-center">
+                                    <h6>SAMSUNG A52s</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>RS.35,999</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Apple border  ">
+                    <div class="item py-2" style="width: 200px;">
+                        <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                                <a href="#"><img src="assets/products/a22.png" width="250px" height="200px" alt="pro1"></a>
+                                <div class="text-center">
+                                    <h6>SAMSUNG A22</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>RS.23,999</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- !Special Price -->
+
+    <!-- Banner Ads  -->
+    <section id="banner_adds">
+        <div class="container py-5 text-center">
+            <img src="assets/banner1-cr-500x150.jpg" alt="banner1" class="img-fluid">
+            <img src="assets/banner2-cr-500x150.jpg" alt="banner1" class="img-fluid">
+        </div>
+    </section>
+    <!-- !Banner Ads  -->
+
+
+
+
+    </main>
+    <!-- !start #main-site -->
+
+
+    <!-- !start #footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <!--  isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+    <!-- Custom Javascript -->
+    <script src="index.js"></script>
+    </div>
+    <hr>
+    <div id="footer">
+        <center>
+            <img src="Mobitech.png" width="100px" height="70px" /><br>
+            <span style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Email :Praju.prajwal238@gmail.com</span>
+            <BR>
+            <br> <span style="color: white;">ABOUT US</span></center>
+    </div>
+    <div id="efoot">
+        &copy;Mobitech, Some right reserved
+    </div>
+</body>
+
+</html>
